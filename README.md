@@ -34,9 +34,9 @@ Run React-app
 
 ## Screenshots:
 
-![Getting Started](../bad_bank_react/images/BadBankInit.PNG)
-![Create user](../bad_bank_react/images/BadBankCreate.PNG)
-![All Data](../bad_bank_react/images/BadBankAll.PNG)
+![Getting Started](images/BadBankAll.PNG)
+![Create Account](images/BadBankCreate.PNG)
+![All Users](images/BadBankAll.PNG)
 
 ### Technology used:
 
