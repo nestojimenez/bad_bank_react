@@ -1,23 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import {
+  BrowserRouter as Route,
+  //BrowserRouter,
+  HashRouter,
+  Switch,
+} from "react-router-dom";
 
+import NavBar from "./components/NavBar";
+import Home from "./components/Home";
+import CreateAccount from "./components/CreateAccount";
+import AllData from "./components/AllData";
+
+//Just call user provider in order to use all the functionality on UserContext.js
+import {UserProvider } from "./context/UserContext";
+
+//Need to try browserRouter usgin component={Home}
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container" style={{ padding: "20px" }}>
+      <NavBar />
+      <UserProvider>
+        <HashRouter>
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="/CreateAccount">
+              <CreateAccount />
+            </Route>
+            <Route path="/AllData">
+              <AllData />
+            </Route>
+          </Switch>
+        </HashRouter>
+      </UserProvider>
     </div>
   );
 }
