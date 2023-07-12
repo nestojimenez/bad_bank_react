@@ -34,7 +34,7 @@ Run React-app
 
 ## Screenshots:
 
-![Getting Started](../bad_bank_react/images/BadBankInit.PNG)
+![BadBankInit](https://github.com/nestojimenez/bad_bank_react/assets/117302789/0c56b67a-b284-4251-9312-17dbf99ef029
 ![Create user](../bad_bank_react/images/BadBankCreate.PNG)
 ![All Data](../bad_bank_react/images/BadBankAll.PNG)
 
